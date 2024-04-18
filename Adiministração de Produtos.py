@@ -29,8 +29,10 @@ while True:
                 print('=-' * 20)
         elif nav == '2': #shows each value in the list
             print('=-' * 20)
-            for lista in enumerate(carrinho):
-                print(f'{lista[0]} | {lista[1]}')
+            con = 0
+            for lista in carrinho:
+                print(f'{con} | {lista[0]} | {lista[1]}')
+                con += 1
             print('=-' * 20)
         elif nav == '3': #updating list values
             try:
